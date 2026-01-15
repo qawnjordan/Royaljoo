@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>احصل الآن من خلال زر الحجز</title>
+<title>استلام الدعم الشهري | U Wallet</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
 
@@ -11,10 +11,14 @@
 :root{
   --red:#b71c1c;
   --green:#1b5e20;
+  --dark:#111;
   --gray:#f4f6f9;
 }
 
-*{box-sizing:border-box;font-family:'Cairo',sans-serif}
+*{
+  box-sizing:border-box;
+  font-family:'Cairo',sans-serif;
+}
 
 body{
   margin:0;
@@ -22,14 +26,15 @@ body{
   color:#222;
 }
 
-/* تنبيه */
+/* تنبيه علوي واضح */
 .notice{
   background:#fff3cd;
   color:#664d03;
-  padding:10px;
+  padding:12px;
   text-align:center;
-  font-size:14px;
-  font-weight:600;
+  font-size:15px;
+  font-weight:700;
+  border-bottom:1px solid #ffe69c;
 }
 
 /* رأس الصفحة */
@@ -42,39 +47,44 @@ header{
 
 header img{
   max-width:120px;
-  margin-bottom:15px;
+  margin-bottom:12px;
 }
 
 header h1{
   font-size:24px;
-  margin:10px 0;
+  margin:10px 0 5px;
 }
 
-/* بطاقة الدعم */
+header p{
+  font-size:15px;
+  opacity:.9;
+}
+
+/* بطاقة المبلغ */
 .support-card{
   background:#fff;
   color:#000;
-  border-radius:18px;
-  padding:20px;
+  border-radius:20px;
+  padding:22px;
   max-width:360px;
-  margin:20px auto 0;
+  margin:22px auto 0;
   box-shadow:0 15px 35px rgba(0,0,0,.25);
 }
 
 .support-card .amount{
-  font-size:40px;
+  font-size:42px;
   font-weight:800;
   color:var(--green);
 }
 
 .support-card span{
   display:block;
-  margin-top:6px;
+  margin-top:8px;
   font-size:15px;
   color:#555;
 }
 
-/* قسم */
+/* أقسام */
 .section{
   padding:30px 18px;
   max-width:900px;
@@ -95,95 +105,113 @@ header h1{
   text-align:center;
   box-shadow:0 8px 20px rgba(0,0,0,.08);
   font-weight:600;
+  font-size:14px;
 }
 
-/* خيار واحد */
+/* زر U Wallet */
 .option{
   background:#fff;
-  border-radius:18px;
-  padding:25px;
+  border-radius:20px;
+  padding:28px 20px;
   text-align:center;
-  box-shadow:0 10px 25px rgba(0,0,0,.1);
+  box-shadow:0 12px 30px rgba(0,0,0,.12);
   cursor:pointer;
   transition:.3s;
-  max-width:320px;
-  margin:30px auto;
+  max-width:340px;
+  margin:35px auto;
   border:3px solid var(--green);
 }
 
 .option:hover{
-  transform:translateY(-5px);
+  transform:translateY(-6px);
 }
 
 .option img{
-  max-width:90px;
+  max-width:95px;
   margin-bottom:12px;
 }
 
 .option span{
   font-weight:800;
   font-size:18px;
+  color:var(--dark);
 }
 
-/* شرح */
-.trust{
+/* شرح بسيط */
+.steps{
   background:#fff;
   padding:22px;
   border-radius:18px;
   box-shadow:0 10px 25px rgba(0,0,0,.08);
-  line-height:2;
   font-size:15px;
+  line-height:2;
+}
+
+.steps strong{
+  color:var(--green);
+}
+
+/* تنبيه ختامي */
+.final-note{
   text-align:center;
+  font-size:14px;
+  color:#555;
+  margin-top:15px;
 }
 
 footer{
   text-align:center;
   padding:20px;
   font-size:13px;
-  color:#666;
+  color:#777;
 }
 </style>
 </head>
 
 <body>
 
+<!-- توضيح أعلى الصفحة -->
 <div class="notice">
-⏳ التسجيل متاح حاليًا وقد يتم إيقافه في أي وقت
+⬇️ للاستلام اضغط على شعار <strong>U Wallet</strong> أو زر التسجيل الموجود أسفل الصفحة ⬇️
 </div>
 
 <header>
   <img src="https://a.top4top.io/p_36651m9jq0.jpeg" alt="علم الأردن">
-  <h1>دعم مالي شهري للمواطنين</h1>
+  <h1>استلام دعم مالي شهري</h1>
+  <p>للمواطنين داخل المملكة الأردنية</p>
 
   <div class="support-card">
     <div class="amount">100 دينار</div>
-    <span>تحويل شهري عبر U Wallet</span>
+    <span>يتم التحويل شهريًا عبر U Wallet</span>
   </div>
 </header>
 
 <section class="section">
   <div class="features">
     <div class="feature">✔ بدون رسوم</div>
-    <div class="feature">✔ بدون بطاقة بنكية</div>
+    <div class="feature">✔ لا يحتاج بطاقة بنكية</div>
     <div class="feature">✔ تحويل مباشر</div>
-    <div class="feature">✔ خطوات سهلة</div>
+    <div class="feature">✔ خطوات سهلة للجميع</div>
   </div>
 </section>
 
 <section class="section">
   <div class="option" onclick="go('https://customerjo.vercel.app')">
     <img src="https://k.top4top.io/p_3665nb0kh0.jpeg" alt="U Wallet">
-    <span>التسجيل عبر U Wallet</span>
+    <span>اضغط هنا للتسجيل عبر U Wallet</span>
   </div>
 </section>
 
 <section class="section">
-  <div class="trust">
-    يتم استلام الدعم الشهري مباشرة عبر محفظة  
-    <strong>U Wallet</strong><br>
-    <br>
-    كل ما عليك هو الضغط على زر التسجيل  
-    واتباع الخطوات الظاهرة على الشاشة.
+  <div class="steps">
+    <strong>طريقة الاستلام:</strong><br>
+    1️⃣ اضغط على زر التسجيل أو شعار U Wallet<br>
+    2️⃣ اتبع الخطوات الظاهرة على الشاشة<br>
+    3️⃣ بعد إكمال البيانات يتم استلام الدعم عبر محفظتك
+  </div>
+
+  <div class="final-note">
+    ⏳ التسجيل متاح حاليًا وقد يتم إيقافه في أي وقت
   </div>
 </section>
 
