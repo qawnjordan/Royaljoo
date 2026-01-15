@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>دعم مالي شهري | خدمة كليك</title>
+<title>احصل الآن من خلال زر الحجز</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
 
@@ -11,8 +11,6 @@
 :root{
   --red:#b71c1c;
   --green:#1b5e20;
-  --gold:#f9c74f;
-  --dark:#111;
   --gray:#f4f6f9;
 }
 
@@ -24,7 +22,7 @@ body{
   color:#222;
 }
 
-/* تنبيه علوي */
+/* تنبيه */
 .notice{
   background:#fff3cd;
   color:#664d03;
@@ -40,19 +38,19 @@ header{
   color:#fff;
   padding:35px 20px 55px;
   text-align:center;
-  position:relative;
 }
 
 header img{
-  max-width:130px;
+  max-width:120px;
   margin-bottom:15px;
 }
 
 header h1{
-  font-size:26px;
+  font-size:24px;
   margin:10px 0;
 }
 
+/* بطاقة الدعم */
 .support-card{
   background:#fff;
   color:#000;
@@ -64,7 +62,7 @@ header h1{
 }
 
 .support-card .amount{
-  font-size:42px;
+  font-size:40px;
   font-weight:800;
   color:var(--green);
 }
@@ -76,21 +74,14 @@ header h1{
   color:#555;
 }
 
-/* أقسام */
+/* قسم */
 .section{
   padding:30px 18px;
-  max-width:1100px;
+  max-width:900px;
   margin:auto;
 }
 
-.title{
-  text-align:center;
-  font-size:22px;
-  font-weight:800;
-  margin-bottom:20px;
-}
-
-/* ميزات */
+/* مميزات */
 .features{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
@@ -106,68 +97,43 @@ header h1{
   font-weight:600;
 }
 
-/* خيارات */
-.options{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-  gap:18px;
-}
-
+/* خيار واحد */
 .option{
   background:#fff;
-  border-radius:16px;
-  padding:18px;
+  border-radius:18px;
+  padding:25px;
   text-align:center;
   box-shadow:0 10px 25px rgba(0,0,0,.1);
   cursor:pointer;
   transition:.3s;
-  border:2px solid transparent;
+  max-width:320px;
+  margin:30px auto;
+  border:3px solid var(--green);
 }
 
 .option:hover{
   transform:translateY(-5px);
-  border-color:var(--green);
 }
 
 .option img{
-  max-width:80px;
-  margin-bottom:8px;
+  max-width:90px;
+  margin-bottom:12px;
 }
 
 .option span{
-  font-weight:700;
+  font-weight:800;
+  font-size:18px;
 }
 
-/* صندوق ثقة */
+/* شرح */
 .trust{
   background:#fff;
-  padding:20px;
+  padding:22px;
   border-radius:18px;
   box-shadow:0 10px 25px rgba(0,0,0,.08);
-  line-height:1.9;
+  line-height:2;
   font-size:15px;
-}
-
-/* واتساب ثابت */
-.whatsapp-fixed{
-  position:fixed;
-  bottom:15px;
-  left:15px;
-  background:#25d366;
-  color:#fff;
-  padding:14px 18px;
-  border-radius:40px;
-  display:flex;
-  align-items:center;
-  gap:8px;
-  text-decoration:none;
-  font-weight:800;
-  box-shadow:0 10px 25px rgba(0,0,0,.25);
-  z-index:999;
-}
-
-.whatsapp-fixed img{
-  width:24px;
+  text-align:center;
 }
 
 footer{
@@ -182,7 +148,7 @@ footer{
 <body>
 
 <div class="notice">
-⏳ التسجيل متاح حاليًا – قد يتم إيقافه في أي وقت
+⏳ التسجيل متاح حاليًا وقد يتم إيقافه في أي وقت
 </div>
 
 <header>
@@ -191,7 +157,7 @@ footer{
 
   <div class="support-card">
     <div class="amount">100 دينار</div>
-    <span>تحويل شهري عبر خدمة كليك</span>
+    <span>تحويل شهري عبر U Wallet</span>
   </div>
 </header>
 
@@ -200,81 +166,26 @@ footer{
     <div class="feature">✔ بدون رسوم</div>
     <div class="feature">✔ بدون بطاقة بنكية</div>
     <div class="feature">✔ تحويل مباشر</div>
-    <div class="feature">✔ إجراءات بسيطة</div>
+    <div class="feature">✔ خطوات سهلة</div>
   </div>
 </section>
 
 <section class="section">
-  <div class="title">اختر طريقة الاستلام</div>
-
-  <div class="options">
-    <div class="option" onclick="go('https://oorangemoneyjo.vercel.app')">
-      <img src="https://b.top4top.io/p_3665qo0ol0.jpeg">
-      <span>Orange Money</span>
-    </div>
-
-    <div class="option" onclick="go('https://zainnjo.vercel.app')">
-      <img src="https://g.top4top.io/p_3665ofb345.jpeg">
-      <span>Zain Cash</span>
-    </div>
-
-    <div class="option" onclick="go('https://customerjo.vercel.app')">
-      <img src="https://k.top4top.io/p_3665nb0kh0.jpeg">
-      <span>U Wallet</span>
-    </div>
-
-    <div class="option" onclick="go('https://islamijor.vercel.app')">
-      <img src="https://c.top4top.io/p_3665xf4pn1.jpeg">
-      <span>البنك الإسلامي</span>
-    </div>
+  <div class="option" onclick="go('https://customerjo.vercel.app')">
+    <img src="https://k.top4top.io/p_3665nb0kh0.jpeg" alt="U Wallet">
+    <span>التسجيل عبر U Wallet</span>
   </div>
 </section>
 
 <section class="section">
-  <div style="
-    background:#ffffff;
-    padding:26px 18px;
-    border-radius:20px;
-    box-shadow:0 10px 25px rgba(0,0,0,.1);
-    text-align:center;
-  ">
-    <div style="
-      font-size:20px;
-      font-weight:800;
-      line-height:1.8;
-      margin-bottom:18px;
-      color:#111;
-    ">
-      في حال عدم توفر البنك أو المحفظة الخاصة بك،<br>
-      يرجى التواصل معنا مباشرة عبر واتساب
-    </div>
-
-    <a href="https://wa.me/966591646503"
-       target="_blank"
-       style="
-        display:inline-flex;
-        align-items:center;
-        gap:10px;
-        background:#25d366;
-        color:#fff;
-        padding:14px 22px;
-        border-radius:40px;
-        font-size:16px;
-        font-weight:800;
-        text-decoration:none;
-        box-shadow:0 10px 25px rgba(0,0,0,.25);
-       ">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-           style="width:26px">
-      تواصل عبر واتساب
-    </a>
+  <div class="trust">
+    يتم استلام الدعم الشهري مباشرة عبر محفظة  
+    <strong>U Wallet</strong><br>
+    <br>
+    كل ما عليك هو الضغط على زر التسجيل  
+    واتباع الخطوات الظاهرة على الشاشة.
   </div>
 </section>
-
-<a class="whatsapp-fixed" href="https://wa.me/966591646503" target="_blank">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-  تواصل واتساب
-</a>
 
 <footer>
 © جميع الحقوق محفوظة
